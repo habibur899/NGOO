@@ -1,0 +1,1097 @@
+/*
+Template Name: NGOO
+Template URI: https://habibportfolio.com
+Author: Habibur Rahman
+Author URI: https://habibportfolio.com
+Description: Full Static Web Template
+Version: 1.0
+*/
+/* ==========================================================================
+Base styles: opinionated defaults
+========================================================================== */
+body {
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+}
+html {
+color: #222;
+font-size: 1em;
+line-height: 1.4;
+}
+/*
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* Vendor-prefixed and regular ::selection selectors cannot be combined:
+* https://stackoverflow.com/a/16982510/7133471
+*
+* Customize the background color to match your design.
+*/
+::-moz-selection {
+background: #b3d4fc;
+text-shadow: none;
+}
+::selection {
+background: #b3d4fc;
+text-shadow: none;
+}
+/*
+* A better looking default horizontal rule
+*/
+hr {
+display: block;
+height: 1px;
+border: 0;
+border-top: 1px solid #ccc;
+margin: 1em 0;
+padding: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin: 0;
+padding: 0;
+font-weight: normal;
+}
+ul {
+margin: 0;
+padding: 0;
+}
+li {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+a:hover {
+text-decoration: none;
+}
+/*
+* Remove the gap between audio, canvas, iframes,
+* images, videos and the bottom of their containers:
+* https://github.com/h5bp/html5-boilerplate/issues/440
+*/
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+vertical-align: middle;
+}
+/*
+* Remove default fieldset styles.
+*/
+fieldset {
+border: 0;
+margin: 0;
+padding: 0;
+}
+/*
+* Allow only vertical resizing of textareas.
+*/
+textarea {
+resize: vertical;
+}
+/* ==========================================================================
+Browser Upgrade Prompt
+========================================================================== */
+.browserupgrade {
+margin: 0.2em 0;
+background: #ccc;
+color: #000;
+padding: 0.2em 0;
+}
+/*
+--------------------
+Table of Content
+--------------------
+1. Common
+2. Header
+3. Banner
+4. Causes
+5. Donate
+6. Tips
+7. Join
+8. Client
+9. Gallery
+10.Events
+10.Partners
+11.Call To Action
+12.Footer Area
+*/
+/* =======================================================
+1. Common
+========================================================== */
+.cmn-clr {
+color: #ff7000;
+}
+.section-padding{
+padding-top: 100px;
+padding-bottom: 100px;
+}
+.title h2{
+font-family: 'Lora', serif;
+font-size: 36px;
+font-weight: 700;
+color: #333333;
+position: relative;
+padding-bottom: 30px;
+margin-bottom: 30px;
+}
+.title h2:after{
+position: absolute;
+content: '';
+width: 30px;
+height: 1px;
+background-color:#ff7000;
+top: 100%;
+left: 0;
+right: 0;
+margin: 0 auto;
+}
+.title p{
+color: #999999;
+font-size: 14px;
+font-weight: 400;
+}
+/* ==========================================================================
+2.Header
+========================================================================== */
+/* HEADER TOP */
+.header-top {
+background-color: #ff7000;
+min-height: 40px;
+}
+.header-top p {
+padding-top: 10px;
+font-weight: 300;
+color: #fff;
+}
+.social-icon {
+}
+.social-icon ul li {
+display: inline-block;
+}
+.social-icon ul li a {
+color: #fff;
+padding: 9px 15px;
+display: inline-block;
+}
+.social-icon ul li a:hover {
+background-color: #171717;
+}
+/* HEADER BOTTOM */
+.header-bottom {
+}
+.head-cont i {
+float: left;
+font-size: 20px;
+color: #ff7000;
+padding: 15px 15px;
+display: inline-block;
+background-color: #eeeeee;
+border-radius: 50%;
+cursor: pointer;
+transition: .3s;
+margin-top: 20px;
+}
+.head-cont i:hover {
+background-color: #171717;
+color: #fff;
+}
+.cont {
+margin-top: 20px;
+margin-left: 20px;
+float: left;
+}
+.donate-btn a {
+background-color: #ff7000;
+font-weight: 400;
+padding: 12px 35px;
+color: #fff;
+display: inline-block;
+overflow: hidden;
+text-transform: uppercase;
+text-decoration: none;
+margin-top: 20px;
+}
+.donate-btn a:hover {
+background-color: #171717;
+}
+/* NAV AREA */
+.nav-area {
+background-color: #222222;
+}
+.main-menu ul i {
+color: #ff7000;
+padding: 0px 10px;
+}
+.main-menu ul li {
+display: inline-block;
+position: relative;
+}
+.main-menu ul li a {
+text-transform: uppercase;
+color: #fff;
+display: inline-block;
+font-weight: 700;
+padding: 20px 10px;
+}
+.main-menu ul li a:hover {
+background-color: #171717;
+color: #ff7000;
+}
+.main-menu ul li ul {
+position: absolute;
+background-color: #222222;
+opacity: 0;
+visibility: hidden;
+transition: .3s;
+top: 150%;
+z-index: 100;
+}
+.main-menu ul li ul li a {
+width: 200px;
+}
+.main-menu ul li ul li a:hover {
+background-color: #171717;
+color: #ff7000;
+}
+.main-menu ul li:hover ul {
+opacity: 1;
+visibility: visible;
+top: 100%;
+}
+/* ==========================================================================
+3.Banner
+========================================================================== */
+.banner-area {
+position: relative;
+}
+.single-slider-1 {
+background-image: url('../images/banner/banner.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+}
+.single-slider-2 {
+background-image: url('../images/banner/banner3.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+}
+.single-slider-3 {
+background-image: url('../images/banner/banner2.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+}
+.banner-content {
+padding-top: 130px;
+}
+.banner-content h2 {
+font-family: 'Lora', serif;
+font-weight: 400;
+color: #fff;
+font-size: 48px;
+background-color: rgba(0, 0, 0, .7);
+padding: 20px
+}
+.banner-content p {
+background-color: rgba(248, 248, 248, .7);
+padding: 20px;
+margin-top: 10px;
+font-weight: 400;
+font-size: 18px;
+color: #333333;
+line-height: 30px;
+}
+.banner-content a {
+padding: 18px 45px;
+display: inline-block;
+background-color: #ff7000;
+text-transform: uppercase;
+color: #fff;
+margin-top: 40px;
+}
+.banner-content a:hover {
+background-color: #171717;
+}
+.banner-area .fa-angle-left {
+left: 120px;
+}
+.banner-area .fa-angle-right {
+left: 180px;
+}
+.banner-area .fa-angle-right,
+.banner-area .fa-angle-left {
+position: absolute;
+bottom: 50px;
+z-index: 1000;
+width: 40px;
+height: 40px;
+color: #fff;
+background-color: rgba(58, 58, 58, .6);
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+cursor: pointer;
+}
+.banner-area .fa-angle-right:hover,
+.banner-area .fa-angle-left:hover {
+background-color: rgba(225, 125, 0, .6);
+}
+/* ==========================================================================
+4.Causes
+========================================================================== */
+.single-causes{
+margin-top: 50px;
+margin-bottom: 50px;
+background-color:#f0f0f0;
+padding-bottom: 30px;
+transition: .3s;
+}
+.single-causes:hover{
+box-shadow: 5px 5px 10px #d9d9d9;
+}
+.single-causes img{
+width: 100%;
+border-radius: 5px;
+}
+.causes-content{
+padding-left: 20px;
+padding-right: 20px;
+}
+.causes-content h2{
+font-size: 18px;
+font-weight: 500;
+color: #333333;
+text-transform: uppercase;
+padding-top: 30px;
+padding-bottom: 15px;
+}
+.causes-content p{
+color: #999999;
+font-weight: 400;
+line-height: 21px;
+padding-bottom: 30px;
+}
+.causes-content h3{
+display: inline-block;
+font-weight: 700;
+font-size: 18px;
+}
+.causes-line p{
+display: inline-block;
+padding: 0;
+color: #999999;
+font-weight: 400;
+margin-left: 10px;
+}
+.causes-line span{
+float: right;
+font-size: 18px;
+color: #333333;
+}
+.causes-content .line,.causes-content .line2,.causes-content .line3{
+margin-top: 15px;
+width: 100%;
+height: 5px;
+background-color:#666666;
+position: relative;
+}
+.causes-content .line:before{
+position: absolute;
+content: '';
+width: 80%;
+height: 5px;
+background-color:#ff7000;
+top: 0;
+left: 0;
+}
+.causes-content .line2:before{
+position: absolute;
+content: '';
+width: 70%;
+height: 5px;
+background-color:#ff7000;
+top: 0;
+left: 0;
+}
+.causes-content .line3:before{
+position: absolute;
+content: '';
+width: 90%;
+height: 5px;
+background-color:#ff7000;
+top: 0;
+left: 0;
+}
+.causes-btn a{
+display: inline-block;
+text-align: right;
+padding:15px 30px;
+background-color: #ff7000;
+color: #fff;
+border-radius: 5px;
+}
+.causes-btn a:hover{
+background-color: #171717;
+}
+/* ==========================================================================
+5.Donate
+========================================================================== */
+.donate-area{
+background-image:url('../images/Donate/donate-bg.jpg');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+.donate-left h2{
+color: #fff;
+font-weight: 400;
+font-size: 24px;
+position: relative;
+padding-bottom: 20px;
+margin-bottom: 20px;
+}
+.donate-left h2:after{
+position: absolute;
+content: '';
+width: 30px;
+height: 1px;
+background: #fff;
+top:100%;
+left: 0;
+}
+.donate-left h1{
+font-family: 'Lora', serif;
+font-weight: 700;
+font-size: 36px;
+color: #fff;
+margin-bottom: 20px;
+}
+.donate-left p{
+margin-bottom: 30px;
+font-weight: 400;
+color: #fff;
+line-height: 21px;
+}
+.donate-line h3{
+display: inline-block;
+font-size: 18px;
+font-weight: 400;
+}
+.donate-line h4{
+color: #fff;
+font-size: 700px;
+font-size: 18px;
+display: inline-block;
+float: right;
+}
+.donate-line .line{
+width: 100%;
+height: 10px;
+background-color: #f0f0f0;
+position: relative;
+margin-bottom: 20px;
+}
+.donate-line .line:after{
+position: absolute;
+content: '';
+width: 80%;
+height: 10px;
+top: 0;
+left: 0;
+background-color: #ff7000;
+}
+.donate-line span{
+font-size: 30px;
+font-weight: 700;
+}
+.donate-line p{
+display: inline-block;
+line-height: 48px;
+color: #fff;
+margin: 0px 10px;
+}
+.happy-img{
+position: relative;
+}
+.happy-img img{
+width: 100%;
+height: 100%;
+}
+.happy-img .causes-btn{
+position: absolute;
+content: '';
+bottom: 45px;
+left: 50%;
+transform: translateX(-50%);
+}
+/* ==========================================================================
+6.Tips
+========================================================================== */
+.tips-area{
+}
+.tips-image{
+width: 100%;
+height: 100%;
+}
+.about-right{
+padding-top: 100px;
+}
+.about-title h2{
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 36px;
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+.about-title h2:after{
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    content: '';
+    left: 0;
+    top: 100%;
+    background-color: #ff7000;
+}
+.about-title p{
+    color: #999999;
+}
+.single-content{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.single-content:hover i{
+    background-color: #333333;
+}
+.single-icon{
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.single-content i{
+    display: inline-block;
+    font-size: 25px;
+    width: 75px;
+    height: 75px;
+    background-color:#ff7000;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 75px;
+    color: #fff;
+    transition: .3s;
+    
+}
+.content-wrap{
+    overflow: hidden;
+}
+.content-wrap h2{
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Lora', serif;
+    color: #333333;
+    margin-bottom: 15px;
+}
+.content-wrap p{
+    color: #999999;
+}
+/* ==========================================================================
+7.Join
+========================================================================== */
+.join-area{
+    background-image:url('../images/join/join-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.join-wrap h2{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Lora', serif;
+    color: #fff;
+}
+.join-wrap h4{
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.join-wrap p{
+    color: #fefefe;
+    width: 735px;
+    margin:0 auto;
+    padding-bottom: 50px;
+}
+.join-wrap a{
+    display: inline-block;
+    background-color: #ff7000;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding:15px 40px;
+    margin-right: 30px;
+    border-radius: 5px;
+    transition: .3s;
+}
+.join-wrap a:hover{
+    background-color: #fff;
+    color: #ff7000;
+}
+
+/* ==========================================================================
+8.Client
+========================================================================== */
+.clients-area .title{
+    margin-bottom: 50px;
+}
+.client-img{
+    float: left;
+    margin-right: 35px;
+    position: relative;
+}
+.client-img:after{
+    position: absolute;
+    content: "\f10d";
+    right: 0;
+    top: 0;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 20px;
+    color: #ff7000;
+
+}
+.client-img img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border:5px solid #f8f8f8;
+}
+.single-margin{
+    margin-bottom: 30px;
+}
+.client-content p{
+    font-weight:400;
+    color: #666666;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+.client-content h3{
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Lora', serif;
+}
+.client-content span{
+    font-family: 'Lora', serif;
+    font-size: 12px;
+    color: #999999;
+}
+/* ==========================================================================
+9.Gallery
+========================================================================== */
+.gallery-area{
+    background-image:url('../images/gallery/gallery-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-area .title{
+    padding-bottom: 30px;
+}
+.gallery-img{
+    margin-bottom: 30px;
+}
+.gallery-img img{
+    width: 100%;
+    cursor: pointer;
+}
+.gallery-img img:hover{
+    opacity: .7;
+}
+/* ==========================================================================
+10.Events
+========================================================================== */
+.event-area{
+    background-image: url('../images/event/event-bg.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.event-left{
+    background-color: rgba(0,0,0,.7);
+    padding: 40px;
+    position:absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.event-left h1{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Lora', serif;
+    color: #fff;
+}
+.event-left h2{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.event-left p{
+    color: #999999;
+    font-weight: 400;
+}
+.event-left a{
+    color: #fff;
+    margin-top: 30px;
+    display: inline-block;
+}
+.event-right{
+    margin-left: 100px;
+}
+.event-right .about-title h2{
+    color: #fff;
+    padding-bottom: 20px;
+}
+.event-right .about-title p{
+    color: #fff;
+}
+.calander h3{
+    background-color: #ff7000;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    padding:20px;
+    margin-right: 30px;
+    color: #fff;
+}
+.event-content{
+    overflow: hidden;
+}
+.event-content h2{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.event-content i{
+    margin-right: 10px;
+}
+.event-content span{
+    font-size: 12px;
+    margin-right: 30px;
+}
+.event-content p{
+    color: #999999;
+    font-weight: 400;
+    margin-top: 15px;
+}
+.event-padding{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+/* ==========================================================================
+10.Partners
+========================================================================== */
+.partners-img img{
+    width: 100%;
+    height: auto;
+    transition: .3s;
+}
+.partners-img:hover img{
+    border:1px solid #999;
+    transform: scale(.3);
+}
+.partners-area .title p{
+    margin-bottom: 50px;
+}
+/* ==========================================================================
+11.Call To Action
+========================================================================== */
+.calltoaction-area{
+    background-color:#ff7000;
+    min-height: 100px;
+}
+.calltoaction-area p{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 10px;
+    margin-top: 25px;
+}
+.action-btn a{
+    display: inline-block;
+    color: #fff;
+    background-color: #333333;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    float: right;
+    margin-top: 25px;
+    border-radius: 5px;
+    transition: .3s;
+}
+.action-btn a:hover{
+    background: #fff;
+    color: #ff7000;
+}
+/* ==========================================================================
+12.Footer Area
+========================================================================== */
+.footer-top{
+    background-image: url('../images/join/join-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #999;
+}
+.footer-title h2{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.footer-title h2:after{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color: #ff7000;
+    top: 100%;
+    left: 0;
+}
+.footer-logo img{
+    width: inherit;
+}
+.footer-logo p{
+    color: #999999;
+    font-weight: 400;
+    font-size: 14px;
+}
+.footer-logo i{
+    display: inline-block;
+    margin-right: 10px;
+}
+.footer-logo a{
+    color: #999999;
+    margin-top: 25px;
+    display: inline-block;
+}
+.footer-logo a:hover{
+    color: #ff7000;
+}
+.footer-menu ul li{
+    padding-bottom: 20px;
+}
+.footer-menu ul li a{
+    color: #999999;
+}
+.footer-menu ul li a:hover{
+    color: #ff7000;
+}
+.footer-menu ul li i{
+    margin-right: 10px;
+}
+.footer-location i{
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.footer-location p{
+    overflow: hidden;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.footer-social ul{
+    margin-top: 20px;
+}
+.footer-social ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-social ul li i{
+    color: #fff;
+    font-size: 20px;
+}
+.footer-social ul li i:hover{
+    color: #ff7000;
+}
+.footer-bottm{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color:#111111;
+    color: #999999;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+Helper classes
+========================================================================== */
+/*
+* Hide visually and from screen readers
+*/
+.hidden {
+display: none !important;
+}
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+.visuallyhidden {
+border: 0;
+clip: rect(0 0 0 0);
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+width: 1px;
+white-space: nowrap; /* 1 */
+}
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+clip: auto;
+height: auto;
+margin: 0;
+overflow: visible;
+position: static;
+width: auto;
+white-space: inherit;
+}
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+.invisible {
+visibility: hidden;
+}
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+.clearfix:before,
+.clearfix:after {
+content: " "; /* 1 */
+display: table; /* 2 */
+}
+.clearfix:after {
+clear: both;
+}
+/* ==========================================================================
+EXAMPLE Media Queries for Responsive Design.
+These examples override the primary ('mobile first') styles.
+Modify as content requires.
+========================================================================== */
+@media only screen and (min-width:35em) {
+/* Style adjustments for viewports that meet the condition */
+}
+@media print, (-webkit-min-device-pixel-ratio:1.25), (min-resolution:1.25dppx), (min-resolution:120dpi) {
+/* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+Print styles.
+Inlined to avoid the additional HTTP request:
+https://www.phpied.com/delay-loading-your-print-css/
+========================================================================== */
+@media print {
+*,
+*:before,
+*:after {
+background: transparent !important;
+color: #000 !important; /* Black prints faster */
+-webkit-box-shadow: none !important;
+box-shadow: none !important;
+text-shadow: none !important;
+}
+a,
+a:visited {
+text-decoration: underline;
+}
+a[href]:after {
+content: " ("attr(href) ")";
+}
+abbr[title]:after {
+content: " ("attr(title) ")";
+}
+/*
+* Don't show links that are fragment identifiers,
+* or use the `javascript:` pseudo protocol
+*/
+a[href^="#"]:after,
+a[href^="javascript:"]:after {
+content: "";
+}
+pre {
+white-space: pre-wrap !important;
+}
+pre,
+blockquote {
+border: 1px solid #999;
+page-break-inside: avoid;
+}
+/*
+* Printing Tables:
+* http://css-discuss.incutio.com/wiki/Printing_Tables
+*/
+thead {
+display: table-header-group;
+}
+tr,
+img {
+page-break-inside: avoid;
+}
+p,
+h2,
+h3 {
+orphans: 3;
+widows: 3;
+}
+h2,
+h3 {
+page-break-after: avoid;
+}
+}
